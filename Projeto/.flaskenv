@@ -1,0 +1,2 @@
+FLASK_APP=TerceiraEntrega.py
+FLASK_ENV=development 

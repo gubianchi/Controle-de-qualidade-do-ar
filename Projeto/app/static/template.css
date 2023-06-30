@@ -1,0 +1,108 @@
+header {
+    background-color: gainsboro;
+    padding: 20px 0;
+    border-bottom: 3px solid green;
+    margin-bottom: 50px;
+    padding-bottom: 5%;
+}
+
+h1 img{
+    padding-top: 15px;
+    width: 20%;
+}
+h1 img:hover{
+    padding-top: 10.3px;
+    width:20.5%;
+}
+
+.introducao{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav h2{
+    display: inline-block;
+    margin: 20px;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 30px 0;
+}
+form label, form fieldset{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padrao{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 12px;
+    width: 50%;
+}
+textarea{
+    display: block;
+    padding: 12px;
+    width: 70%;
+    text-indent: -58px;
+}
+
+#enviar, #excluir, #alterar, #classificar{
+    display: block;
+    margin-top: 25px;
+    padding: 12px;
+    width: 35%;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: 0.2s background;
+}
+#enviar:hover, #excluir:hover, #alterar:hover, #classificar:hover{
+    background-color: rgb(49, 139, 0);
+    transform: scale(1.02);
+}
+
+
+#excluir_tudo{
+    display: block;
+    margin-top: 5px;
+    padding: 12px;
+    width: 15%;
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 2px;
+    font-size: 13px;
+    transition: 0.2s background;
+}
+
+#excluir_tudo:hover{
+    transform: scale(1.05);
+}
+
+#mostra_classificacao{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 12px;
+    width: 50%;
+    border: 2px
+}

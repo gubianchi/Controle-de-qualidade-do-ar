@@ -1,0 +1,75 @@
+header {
+    background-color: gainsboro;
+    padding: 20px 0;
+    border-bottom: 3px solid green;
+    margin-bottom: 50px;
+    padding-bottom: 5%;
+}
+
+h1 img{
+    padding-top: 15px;
+    width: 20%;
+}
+
+.introducao{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav h2{
+    display: inline-block;
+    margin: 20px;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+main{
+    margin: 0 auto;
+    width: 940px;
+    padding: 50px 0;
+    margin-bottom: 20px;
+    background-color:white;
+}
+.opcoes{
+    list-style-type: none;
+    margin-left: 25%;
+    margin-right: 25%;
+    overflow: hidden;
+    border: 3px solid green;
+    border-radius: 5px;
+}
+li{
+    display: block;
+    text-align: center;
+    padding:  15px 15px;
+    text-decoration: none;
+}
+#menu{
+    background-color: green;
+}
+#lista{
+    border-bottom: 2px solid green;
+}
+li p{
+    font-size: 30px;
+    font-weight: bold;
+}
+li a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+li a:hover{
+    color: green;
+    text-decoration: underline;
+}

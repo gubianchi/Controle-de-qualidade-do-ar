@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Medidor de Qualidade do Ar</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'index.css')}}">
+</head>
+
+<body>
+    <header>
+        <div class="introducao">
+            <h1><img src="{{url_for('static', filename = 'qualidadeDoAr.png')}}" alt="logo site"></h1>
+            <nav>
+                <h2 class="titulo principal">Medidor de Qualidade do Ar</p>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="opcoes">
+            <ul>
+                <li id="menu"><p>Menu</p></li>
+                <li id="lista"><a href="/adicionar_amostra">Adicionar Amostra</a></li>
+                <li id="lista"><a href="/alterar_amostra">Alterar Amostra</a></li>
+                <li id="lista"><a href="/excluir_amostra">Excluir Amostra</a></li>
+                <li><a href="/classificacao">Classificar Qualidade do Ar</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

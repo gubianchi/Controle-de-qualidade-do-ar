@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Amostra</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'template.css')}}">
+</head>
+
+<body>
+    <header>
+        <div class="introducao">
+            <h1><a href="/index"><img src="{{url_for('static', filename = 'qualidadeDoAr.png')}}" alt="logo site"></a></h1>
+            <nav>
+                <h2 class="titulo principal">Adicionar Amostra</p>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+       <form action = "/inserir_bd" method='post'>
+            <label for="particulas">Partículas Inaláveis:</label>
+            <input type="text" name="MP10" class="input-padrao" required>
+
+            <label for="particulas">Partículas Finas:</label>
+            <input type="text" name="MP25" class="input-padrao" required>
+
+            <label for="particulas">O3:</label>
+            <input type="text" name="O3" class="input-padrao" required>
+
+            <label for="particulas">CO:</label>
+            <input type="text" name="CO" class="input-padrao" required>
+
+            <label for="particulas">NO2:</label>
+            <input type="text" name="NO2" class="input-padrao" required>
+
+            <label for="particulas">SO2:</label>
+            <input type="text" name="SO2" class="input-padrao" required>
+
+            <button type="submit" id="enviar">Enviar</button>
+       </form>
+    </main>
+</body>
+</html>

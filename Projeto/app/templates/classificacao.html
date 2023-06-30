@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Classificação</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'template.css')}}">
+</head>
+
+<body>
+    <header>
+        <div class="introducao">
+            <h1><a href="/index"><img src="{{url_for('static', filename = 'qualidadeDoAr.png')}}" alt="logo site"></a></h1>
+            <nav>
+                <h2 class="titulo principal">Classificação da Qualidade do Ar</p>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action = '/classificar_ar' method = 'post'>
+            <label>Classificação:</label>
+            <textarea id="classificacao" cols="100" rows="11"
+            placeholder="">{% if mensagem %}
+            {{mensagem}}
+        {%endif%}</textarea>
+           
+            <button type="submit" id="classificar">Classificar</button>
+        </form> 
+
+    </main>
+</body>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Excluir Amostra</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'reset.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'template.css')}}">
+</head>
+
+<body>
+    <header>
+        <div class="introducao">
+            <h1><a href="/index"><img src="{{url_for('static', filename = 'qualidadeDoAr.png')}}" alt="logo site"></a></h1>
+            <nav>
+                <h2 class="titulo principal">Excluir Amostra</p>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <textarea id="classificacao" cols="100" rows="11"
+        placeholder="">{% if tabela %}
+        {{tabela}}
+    {%endif%}</textarea>
+
+       <form action = '/excluir_bd' method = 'post'>
+            <label for="particulas">Excluir Amostra:</label>
+            <input type="text" name="excluir_amostra" class="input-padrao" required>
+
+            <button type="submit" id="excluir">Excluir</button>
+       </form>
+       <form action = '/excluir_tudo'>
+            <button id="excluir_tudo">Excluir Tudo</button>
+       </form>
+    </main>
+</body>
+</html>
