@@ -7,3 +7,5 @@ O código python principal esta em Projeto/app/routes.py
 As páginas HTML estão em Projeto/app/templates 
 <br>
 O CSS está em Projeto/app/statics
+<br> 
+Foi usado um banco de dados local oracle DB para o armazenamento dos dados.
